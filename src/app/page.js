@@ -6,6 +6,7 @@ import tsLogo from '../images/ts-logo.png'
 import tailWind from '../images/tailwind-logo.png'
 import logo from '../images/ha-logo.png'
 import reactLogo from '../images/react-logo.svg'
+import { Slide } from "@/components/slider/slider"
 
 export default function Home() {
   const urlZap = "https://wa.me//5541991675316?text=Olá,%20vim%20pelo%20seu%20site%20e%20queria%20mais%20informações%20sobre%20seus%20serviços"
@@ -20,17 +21,19 @@ export default function Home() {
           </div>
         </aside>
       </div>
-      <div className='pl-16 w-full'>
-        <nav className='w-full h-20 bg-zinc-700 flex justify-between  items-center border-b border-sky-300'>
+      <div className='pl-20 w-full '>
+        <div className="relative">
+        <nav className='w-full h-20 pr-20 fixed bg-zinc-700 flex justify-between items-center border-b border-sky-300'>
           <div className='flex items-center '>
             <Image src={logo} width={120} height={10} alt="logo"/>
             <h2 className='text-xl text-sky-300'>Henrique Algauer</h2>
           </div>
           <button className=' border-l border-sky-300 text-zinc-100 px-12 h-full bg-sky-300'>CONTATO</button>
         </nav>
-        <main className='w-full'>
+        </div>
+        <main className='w-full mt-20'>
 
-          <div className='grid grid-cols-3 bg-zinc-700 px-12'>
+          <div className='grid grid-cols-3 bg-zinc-700 '>
             <div className='py-8 border-r border-sky-300 col-span-2 pl-16'>
               <h3 className='text-sky-300 text-7xl font-bold mb-8'>
                 Dev <br />
@@ -39,11 +42,10 @@ export default function Home() {
               </h3>
               <a className='text-xl border-b border-sky-300 uppercase py-2 text-sky-300' href="#">Mais sobre mim</a>
             </div>
-            <div>
-              hello
+            <div className='w-full bg-red-200' >
+              <Slide className='text-center'/>
             </div>
           </div>
-
 
           <div className='bg-zinc-700 px-36 py-28 border-y border-sky-300'>
             <div className='mb-20'>
