@@ -3,15 +3,18 @@ import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
-import css from '../../images/css-icon.png'
-import git from '../../images/git-icon.svg'
-import tailwind from '../../images/tailwind-icon.png'
-import typeScript from '../../images/typescript-icon.png'
-import js from '../../images/script-java.png'
-import reactIcon from '../../images/react-logo.png'
-import htmlIcon from '../../images/html-icon.svg'
+import css from '../../images/slider/css-icon.svg'
+import git from '../../images/slider/git-icon.svg'
+import tailwind from '../../images/slider/tailwind-icon.svg'
+import typeScript from '../../images/slider/typescript-icon.svg'
+import js from '../../images/slider/js-logo.svg'
+import reactIcon from '../../images/slider/react-icon.svg'
+import htmlIcon from '../../images/slider/html-icon.svg'
+import stack from '../../images/slider/stack-overflow-icon.svg'
+import linkedin from '../../images/linkedIn-icon.svg'
+import ghub from '../../images/github-icon.svg'
 
-const animation = { duration: 28000, easing: (t) => t };
+const animation = { duration: 50000, easing: (t) => t };
 
 const Slide = () => {
   const [sliderRef] = useKeenSlider({
@@ -33,26 +36,26 @@ const Slide = () => {
     }
   });
   return (
-    <div ref={sliderRef} className="keen-slider bg-green-300 " style={{ height: 300 }}>
-      <div className="keen-slider__slide number-slide1 flex">
-        <Image src={reactIcon} height={100} width={100} alt="react-icon"/>
+    <div ref={sliderRef} className="keen-slider  " style={{ height: 390 }}>
+      <div className="keen-slider__slide number-slide1 flex justify-around ">
+        <Image src={htmlIcon} height={100} width={100} alt="html-icon" />
+        <Image src={css} height={100} width={100} alt="css-icon" />
       </div>
-      <div className="keen-slider__slide number-slide2">
-        2
-        <Image src={css} height={100} width={100} alt="css-icon"/>
+      <div className="keen-slider__slide number-slide2 flex justify-around">
+        <Image src={js} height={100} width={100} alt="js-icon" />
+        <Image src={reactIcon} height={50} width={120} alt="react-icon" />
+        <Image src={typeScript} height={100} width={100} alt="css-icon" />
       </div>
-      <div className="keen-slider__slide number-slide3">
-        3
+      <div className="keen-slider__slide number-slide3 flex justify-around">
+        <Image src={git} height={100} width={100} alt="css-icon" />
+        <Image src={tailwind} height={100} width={100} alt="css-icon" />
       </div>
-      <div className="keen-slider__slide number-slide4">
-        4
+      <div className="keen-slider__slide number-slide4 flex justify-around">
+        <Image src={ghub} height={100} width={100} alt="css-icon" />
+        <Image src={stack} height={100} width={100} alt="css-icon" />
+        <Image src={linkedin} height={100} width={100} alt="css-icon" />
       </div>
-      <div className="keen-slider__slide number-slide5">
-        5
-      </div>
-      <div className="keen-slider__slide number-slide6">
-        6
-      </div>
+
     </div>
   );
 };
