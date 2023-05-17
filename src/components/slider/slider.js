@@ -14,7 +14,7 @@ import stack from '../../images/slider/stack-overflow-icon.svg'
 import linkedin from '../../images/linkedIn-icon.svg'
 import ghub from '../../images/github-icon.svg'
 
-const animation = { duration: 50000, easing: (t) => t };
+const animation = { duration: 30000, easing: (t) => t };
 
 const Slide = () => {
   const [sliderRef] = useKeenSlider({
