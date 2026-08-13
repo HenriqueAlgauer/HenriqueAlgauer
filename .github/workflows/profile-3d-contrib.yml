@@ -13,16 +13,18 @@ jobs:
     name: Generate 3D contribution graph
     runs-on: ubuntu-latest
     steps:
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          username: henriquealgauer
+      - uses: actions/checkout@v5
 
-      - name: Push output to the profile-3d-contrib branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: profile-3d-contrib
-          build_dir: profile-3d-contrib
+      - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: henriquealgauer
+
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          if git commit -m "chore: update 3d contribution graph"; then
+            git push
+          fi
