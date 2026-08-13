@@ -74,9 +74,9 @@
 ### 📊 GitHub Activity
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=henriquealgauer&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
+  <img src="https://stats.algauer.cloud/api?username=henriquealgauer&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
   <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=henriquealgauer&layout=compact&langs_count=6&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
+  <img src="https://stats.algauer.cloud/api/top-langs/?username=henriquealgauer&layout=compact&langs_count=6&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
   <br><br>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=henriquealgauer&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" />
 </div>
